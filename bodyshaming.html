@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>bodyshaming</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('http://az616578.vo.msecnd.net/files/2016/04/23/6359703990904026861326589705_Untitled11.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("http://www.becomingasuperhuman.com/wp-content/uploads/2015/09/belly-2354_1920.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("img_parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+    }
+}
+</style>
+<script>
+      function myFunction() {
+        var image = document.getElementById("image");
+		var visit = "http://s6.postimg.org/furc4xn6p/d368d9c73d4b82ca5c27c6be1e5ae601.gif";
+		var code = "https://thrivingtiger.files.wordpress.com/2015/10/11.jpg";
+		
+		//image.src = "http://static1.squarespace.com/static/52d62550e4b09a1f1b0861f1/t/52fbec7be4b003139ba67d98/1469046588256/?format=1000w"
+		//image.alt ="alexa is cool";
+		
+		if (image.src == visit) {
+			image.src = code ;
+			image.alt = "its fun!"
+			}
+		else {
+		image.src= visit;
+		image.alt = "thanks!"
+		}
+      }
+	 
+</script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">HOME</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+ 
+   <li><a href="skinny.html" class="w3-padding-large w3-white">Skinny Shaming</a></li>
+ 
+ <li class="w3-hide-small"><a href="fat.html" class="w3-padding-large w3-hover-white">Fat Shaming</a></li>
+ 
+ <li class="w3-hide-small"><a href="solution.html" class="w3-padding-large w3-hover-white">Solution</a></li>
+
+</ul>
+
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">BODY<span class="w3-hide-small"> SHAMING</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I am passionate about stopping bodyshamming</em></p>
+  <p>Did you ever stop and think about how often we are told to change our appearance?  Magazines constantly offer tips about how to lose weight “in days,” appear slimmer “instantly,” and hide our “imperfections”… without actually knowing anything about us, much less our appearance.  This is one example of body-shaming, and it is everywhere.  Sitcoms so frequently use overweight characters’ bodies as the basis of many of the show’s jokes.  It has become the norm to criticize aspects of our bodies as some type of bonding experience with friends – if we all hate our bodies; it somehow makes us feel connected and united.  Body-shaming (criticizing yourself or others because of some aspect of physical appearance) can lead to a vicious cycle of judgment and criticism.  Messages from the media and from each other often imply that we should want to change, that we should care about looking slimmer, smaller, and tanner.  And if we don’t, we worry that we are at risk of being the target of someone else’s body-shaming comments.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+      <p><b>Alexa Mendoza</b></p><br>
+      <img src="photoportfolio.png
+	  " class="w3-circle" alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+      <h4>We Can All Make A Difference!</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide"></span>
+  </div>
+</div>
+  <center><h1 id="code"><img id = "image" src="http://s6.postimg.org/furc4xn6p/d368d9c73d4b82ca5c27c6be1e5ae601.gif"></h1></center>
+	
+    <center> <button id="btn" onclick="myFunction()">Click me!</button></center>
+  
+ 
+</script>
+
+</body>
+</html>
+
+
